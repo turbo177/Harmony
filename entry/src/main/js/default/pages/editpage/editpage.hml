@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="container">
+ <text class="title">
+ {{ titleStr }}
+ </text>
+ <textarea ref="content" class="content" placeholder="default" extend="true" onchange="onChange">
+ {{ titleContent }}
+ </textarea>
+    </div>
+    <div class="menu">
+        <button class="save" onclick="saveRecords({{ titleStr }}, {{ titleContent }})">保存</button>
+        <button class="save" onclick="migrate">迁移</button>
+    </div>
+</div>

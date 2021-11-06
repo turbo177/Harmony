@@ -1,0 +1,11 @@
+<div class="container">
+    <button class="title_button" onclick="newNote" >
+        {{ $t('strings.new_btn') }}
+    </button>
+    <list class="notelist" id="list">
+        <list-item for="{{todolist}}" class="note_item" onclick="editItem({{$item.title }}, {{ $item.content }})" >
+            <text class="note_title">{{$item.title}}</text>
+            <text class="note_content">{{$item.content}}</text>
+        </list-item>
+    </list>
+</div>
